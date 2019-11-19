@@ -1,0 +1,17 @@
+net: “provide the path to train_test_protoxt”
+## name of net . The test_iter and batch_size should be such that it should be able to ##cover whole of testing images. 
+test_iter: 50
+test_interval: 100
+## It might give some worth appreciating value
+base_lr: 0.001
+lr_policy: “inv”
+gamma: 0.0001
+power:0.75
+stepsize: 10000
+display: 20
+max_iter: 45000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 10000
+snapshot_prefix:” path / to/ folder/forsnapshotting”
+solver_mode: GPU
